@@ -22,12 +22,30 @@
 <div class="container mt-5" align="center">
   <h1>Eliminar Solicitud de entrega de Producto</h1>
 </div>
-
 <div class="container mt-5" align="center">
-
-
-      
+  <h4>Ingresa el ID de la solicitud de entrega que desea Eliminar</h4>
+    <div class="col-sm-5 mb-3 mt-3" >
+      <input type="text" class="form-control" id="nombreProducto" placeholder="Escribe el nombre del producto" name="nombreProducto" required>
+      <div class="valid-feedback">Valido.</div>
+      <div class="invalid-feedback">Por favor llena este campo.</div>
+    </div>
 </div>
+<br><br>
+    <div class="container mt-3" align="center">
+    <a href="eliminaExisitoso.html" type="button" class="btn btn-primary" title="ADVERTENCIA!" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Seguro que desea eliminar solicitud de Entrega?">Eliminar</a>
+    <br><br>
+</div>
+
+
+
+
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+
 <br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
